@@ -1,0 +1,27 @@
+openai:
+  generate_model:
+    model_name: "gpt-35-turbo"
+  generate_choices:
+    - api_key: ""
+      model_name: "gpt-35-turbo"
+    - api_key: ""
+      model_name: "gpt-4"
+  generate_data_name: "medical_meadow"
+  generate_ids:
+    - 0
+    - 10000
+  prompt_method:
+    - ""
+  embedding:
+    model_name: "text-embedding-ada-002"
+    api_key: ""
+    dimension: 1536
+
+pinecone:
+  api_key: ""
+  environment: ""
+  namespaces:
+      - namespace: "medical-knowledge-pdf"
+        path: "./PDF/Medical_Knowledge_PDF/"
+      - namespace: "evaluation-knowledge-pdf"
+        path: "./PDF/Evaluation_Knowledge_PDF/"
